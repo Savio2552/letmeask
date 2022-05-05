@@ -27,7 +27,7 @@ export function NewRoom() {
             authorId: user?.id
         })
 
-        navigate(`/rooms/${firebaseRoom.key}`);
+        navigate(`/admin/rooms/${firebaseRoom.key}`);
     }
 
     const {user} = useAuth();
@@ -46,7 +46,7 @@ export function NewRoom() {
                     <form onSubmit={handleCreateRoom}>
                         <input
                         type="text"
-                        placeholder="Digite o codigo da sala"
+                        placeholder="Digite o nome da sala"
                         onChange={event => setNewRoom(event.target.value)}
                         value={newRoom}
                         />

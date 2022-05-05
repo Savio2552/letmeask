@@ -13,6 +13,14 @@
             > img {
                 max-height: 45px;
             }
+            >div{
+                display: flex;
+                gap: 16px;
+
+                button{
+                    height: 40px;
+                }
+            }
         }
     }
 
@@ -20,7 +28,11 @@
         max-width: 800px;
         margin:  0 auto;
 
+        .question-list{
+            margin-top: 32px;
+        }
         .room-title{
+            justify-content: space-between;
             margin: 32px 0 24px;
             display: flex;
             align-items: center;
@@ -28,7 +40,8 @@
             h1{
                 font-family: Poppins ,sans-serif;
                 font-size: 24px;
-                color: #29292e
+                color: #29292e;
+                display: flex;
             }
             span{
                 margin-left: 16px;
